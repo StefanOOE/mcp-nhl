@@ -1,0 +1,284 @@
+{
+ "prevDate": "2026-04-14",
+ "currentDate": "2026-04-15",
+ "nextDate": "2026-04-16",
+ "gameWeek": [
+  {
+   "date": "2026-04-12",
+   "dayAbbrev": "SUN",
+   "numberOfGames": 6
+  },
+  {
+   "date": "2026-04-13",
+   "dayAbbrev": "MON",
+   "numberOfGames": 10
+  },
+  {
+   "date": "2026-04-14",
+   "dayAbbrev": "TUE",
+   "numberOfGames": 9
+  },
+  {
+   "date": "2026-04-15",
+   "dayAbbrev": "WED",
+   "numberOfGames": 6
+  },
+  {
+   "date": "2026-04-16",
+   "dayAbbrev": "THU",
+   "numberOfGames": 6
+  },
+  {
+   "date": "2026-04-17",
+   "dayAbbrev": "FRI",
+   "numberOfGames": 0
+  },
+  {
+   "date": "2026-04-18",
+   "dayAbbrev": "SAT",
+   "numberOfGames": 3
+  }
+ ],
+ "oddsPartners": [
+  {
+   "partnerId": 2,
+   "country": "SE",
+   "name": "Unibet",
+   "imageUrl": "https://assets.nhle.com/betting_partner/unibet.svg",
+   "siteUrl": "https://www.unibet.se/betting/sports/filter/ice_hockey/nhl/all/matches",
+   "bgColor": "#14805E",
+   "textColor": "#FFFFFF",
+   "accentColor": "#3AAA35"
+  },
+  {
+   "partnerId": 3,
+   "country": "CZ",
+   "name": "Tipsport",
+   "imageUrl": "https://assets.nhle.com/betting_partner/tipsport.svg",
+   "siteUrl": "https://www.tipsport.cz/PartnerRedirectAction.do?pid=16961&sid=20360&bid=34954&tid=11268",
+   "bgColor": "#2497F2",
+   "textColor": "#FFFFFF",
+   "accentColor": "#FFFFFF"
+  },
+  {
+   "partnerId": 6,
+   "country": "FI",
+   "name": "Veikkaus",
+   "imageUrl": "https://assets.nhle.com/betting_partner/veikkaus.svg",
+   "siteUrl": "https://www.veikkaus.fi/fi/vedonlyonti/pitkaveto?t=3-2-1_NHL",
+   "bgColor": "#0025F5",
+   "textColor": "#FFFFFF",
+   "accentColor": "#FFFFFF"
+  },
+  {
+   "partnerId": 7,
+   "country": "CA",
+   "name": "FanDuel",
+   "imageUrl": "https://assets.nhle.com/betting_partner/fanduel.svg",
+   "siteUrl": "https://fanduel.com",
+   "bgColor": "#0078ff",
+   "textColor": "#FFFFFF",
+   "accentColor": "#FFFFFF"
+  },
+  {
+   "partnerId": 8,
+   "country": "DE",
+   "name": "Sportradar",
+   "imageUrl": "https://assets.nhle.com/betting_partner/sportsradar.svg",
+   "siteUrl": "https://sportradar.com",
+   "bgColor": "#000000",
+   "textColor": "#FFFFFF",
+   "accentColor": "#E6E6E6"
+  },
+  {
+   "partnerId": 9,
+   "country": "US",
+   "name": "DraftKings",
+   "imageUrl": "https://assets.nhle.com/betting_partner/draftkings.svg",
+   "siteUrl": "https://dksb.sng.link/As9kz/3i4d?_dl=https%3A%2F%2Fsportsbook.draftkings.com%2Fgateway%3Fs%3D333653091&pcid=427326&psn=1320&pcn=NHL&pscn=OddsWidget&pcrn=NoOffer&pscid=SP&wpcid=427326&wpsrc=1320&wpcn=NHL&wpscn=OddsWidget&wpcrn=NoOffer&wpscid=SP&_forward_params=1",
+   "bgColor": "#000000",
+   "textColor": "#FFFFFF",
+   "accentColor": "#FFFFFF"
+  },
+  {
+   "partnerId": 10,
+   "country": "SK",
+   "name": "Doxxbet",
+   "imageUrl": "https://assets.nhle.com/betting_partner/doxxbet.svg",
+   "siteUrl": "https://www.doxxbet.sk/sk/sportove-tipovanie-online/kurzy/ladovy-hokej/usa/nhl/?msID=21&mbID=27",
+   "bgColor": "#f30d31",
+   "textColor": "#202020",
+   "accentColor": "#ffffff"
+  }
+ ],
+ "games": [
+  {
+   "id": 2025021301,
+   "season": 20252026,
+   "gameType": 2,
+   "gameDate": "2026-04-15",
+   "venue": {
+    "default": "KeyBank Center"
+   },
+   "startTimeUTC": "2026-04-15T23:00:00Z",
+   "easternUTCOffset": "-04:00",
+   "venueUTCOffset": "-04:00",
+   "gameState": "OFF",
+   "gameScheduleState": "OK",
+   "awayTeam": {
+    "id": 25,
+    "name": {
+     "default": "Stars"
+    },
+    "abbrev": "DAL",
+    "score": 4,
+    "sog": 28,
+    "logo": "https://assets.nhle.com/logos/nhl/svg/DAL_light.svg"
+   },
+   "homeTeam": {
+    "id": 7,
+    "name": {
+     "default": "Sabres"
+    },
+    "abbrev": "BUF",
+    "score": 3,
+    "sog": 24,
+    "logo": "https://assets.nhle.com/logos/nhl/svg/BUF_light.svg"
+   },
+   "gameCenterLink": "/gamecenter/dal-vs-buf/2026/04/15/2025021301",
+   "threeMinRecap": "/video/dal-at-buf-recap-6393193848112",
+   "threeMinRecapFr": "/fr/video/dal-vs-buf-15-04-2026-resume-6393193634112",
+   "condensedGame": "/video/dal-at-buf-condensed-game-6393197090112",
+   "condensedGameFr": "/fr/video/match-condense-stars-sabres-15-04-2026-6393195516112",
+   "clock": {
+    "timeRemaining": "00:00",
+    "secondsRemaining": 0,
+    "running": false,
+    "inIntermission": false
+   },
+   "neutralSite": false,
+   "venueTimezone": "America/New_York",
+   "period": 5,
+   "periodDescriptor": {
+    "number": 5,
+    "periodType": "SO",
+    "maxRegulationPeriods": 3
+   },
+   "gameOutcome": {
+    "lastPeriodType": "SO"
+   }
+  },
+  {
+   "id": 2025021302,
+   "season": 20252026,
+   "gameType": 2,
+   "gameDate": "2026-04-15",
+   "venue": {
+    "default": "Benchmark International Arena"
+   },
+   "startTimeUTC": "2026-04-15T23:00:00Z",
+   "easternUTCOffset": "-04:00",
+   "venueUTCOffset": "-04:00",
+   "gameState": "OFF",
+   "gameScheduleState": "OK",
+   "awayTeam": {
+    "id": 3,
+    "name": {
+     "default": "Rangers"
+    },
+    "abbrev": "NYR",
+    "score": 4,
+    "sog": 21,
+    "logo": "https://assets.nhle.com/logos/nhl/svg/NYR_light.svg"
+   },
+   "homeTeam": {
+    "id": 14,
+    "name": {
+     "default": "Lightning"
+    },
+    "abbrev": "TBL",
+    "score": 2,
+    "sog": 31,
+    "logo": "https://assets.nhle.com/logos/nhl/svg/TBL_light.svg"
+   },
+   "gameCenterLink": "/gamecenter/nyr-vs-tbl/2026/04/15/2025021302",
+   "threeMinRecap": "/video/nyr-at-tbl-recap-6393194721112",
+   "threeMinRecapFr": "/fr/video/nyr-vs-tbl-15-04-2026-resume-6393195502112",
+   "condensedGame": "/video/nyr-at-tbl-condensed-game-6393196390112",
+   "condensedGameFr": "/fr/video/match-condense-rangers-lightning-15-04-2026-6393195980112",
+   "clock": {
+    "timeRemaining": "00:00",
+    "secondsRemaining": 0,
+    "running": false,
+    "inIntermission": false
+   },
+   "neutralSite": false,
+   "venueTimezone": "US/Eastern",
+   "period": 3,
+   "periodDescriptor": {
+    "number": 3,
+    "periodType": "REG",
+    "maxRegulationPeriods": 3
+   },
+   "gameOutcome": {
+    "lastPeriodType": "REG"
+   }
+  },
+  {
+   "id": 2025021303,
+   "season": 20252026,
+   "gameType": 2,
+   "gameDate": "2026-04-15",
+   "venue": {
+    "default": "Amerant Bank Arena"
+   },
+   "startTimeUTC": "2026-04-15T23:00:00Z",
+   "easternUTCOffset": "-04:00",
+   "venueUTCOffset": "-04:00",
+   "gameState": "OFF",
+   "gameScheduleState": "OK",
+   "awayTeam": {
+    "id": 17,
+    "name": {
+     "default": "Red Wings"
+    },
+    "abbrev": "DET",
+    "score": 1,
+    "sog": 26,
+    "logo": "https://assets.nhle.com/logos/nhl/svg/DET_light.svg?season=20252026"
+   },
+   "homeTeam": {
+    "id": 13,
+    "name": {
+     "default": "Panthers"
+    },
+    "abbrev": "FLA",
+    "score": 8,
+    "sog": 28,
+    "logo": "https://assets.nhle.com/logos/nhl/svg/FLA_light.svg"
+   },
+   "gameCenterLink": "/gamecenter/det-vs-fla/2026/04/15/2025021303",
+   "threeMinRecap": "/video/det-at-fla-recap-6393193682112",
+   "threeMinRecapFr": "/fr/video/det-vs-fla-15-04-2026-resume-6393194462112",
+   "condensedGame": "/video/det-at-fla-condensed-game-6393193486112",
+   "condensedGameFr": "/fr/video/match-condense-red-wings-panthers-15-04-2026-6393192633112",
+   "clock": {
+    "timeRemaining": "00:00",
+    "secondsRemaining": 0,
+    "running": false,
+    "inIntermission": false
+   },
+   "neutralSite": false,
+   "venueTimezone": "US/Eastern",
+   "period": 3,
+   "periodDescriptor": {
+    "number": 3,
+    "periodType": "REG",
+    "maxRegulationPeriods": 3
+   },
+   "gameOutcome": {
+    "lastPeriodType": "REG"
+   }
+  }
+ ]
+}

@@ -1,0 +1,156 @@
+{
+ "forwards": [
+  {
+   "id": 8484529,
+   "headshot": "https://assets.nhle.com/mugs/nhl/20262027/EDM/8484529.png",
+   "firstName": {
+    "default": "Connor"
+   },
+   "lastName": {
+    "default": "Clattenburg"
+   },
+   "sweaterNumber": 64,
+   "positionCode": "C",
+   "shootsCatches": "L",
+   "heightInInches": 74,
+   "weightInPounds": 215,
+   "heightInCentimeters": 188,
+   "weightInKilograms": 98,
+   "birthDate": "2005-05-02",
+   "birthCity": {
+    "default": "Ottawa"
+   },
+   "birthCountry": "CAN",
+   "birthStateProvince": {
+    "default": "ON"
+   }
+  },
+  {
+   "id": 8482703,
+   "headshot": "https://assets.nhle.com/mugs/nhl/20262027/EDM/8482703.png",
+   "firstName": {
+    "default": "Colton"
+   },
+   "lastName": {
+    "default": "Dach"
+   },
+   "sweaterNumber": 34,
+   "positionCode": "C",
+   "shootsCatches": "L",
+   "heightInInches": 76,
+   "weightInPounds": 218,
+   "heightInCentimeters": 193,
+   "weightInKilograms": 99,
+   "birthDate": "2003-01-04",
+   "birthCity": {
+    "default": "St. Albert",
+    "fr": "St-Albert"
+   },
+   "birthCountry": "CAN",
+   "birthStateProvince": {
+    "default": "AB"
+   }
+  }
+ ],
+ "defensemen": [
+  {
+   "id": 8484139,
+   "headshot": "https://assets.nhle.com/mugs/nhl/20262027/EDM/8484139.png",
+   "firstName": {
+    "default": "Beau"
+   },
+   "lastName": {
+    "default": "Akey"
+   },
+   "sweaterNumber": 82,
+   "positionCode": "D",
+   "shootsCatches": "R",
+   "heightInInches": 72,
+   "weightInPounds": 173,
+   "heightInCentimeters": 183,
+   "weightInKilograms": 78,
+   "birthDate": "2005-02-11",
+   "birthCity": {
+    "default": "Waterloo"
+   },
+   "birthCountry": "CAN",
+   "birthStateProvince": {
+    "default": "ON"
+   }
+  },
+  {
+   "id": 8480803,
+   "headshot": "https://assets.nhle.com/mugs/nhl/20262027/EDM/8480803.png",
+   "firstName": {
+    "default": "Evan"
+   },
+   "lastName": {
+    "default": "Bouchard"
+   },
+   "sweaterNumber": 2,
+   "positionCode": "D",
+   "shootsCatches": "R",
+   "heightInInches": 75,
+   "weightInPounds": 192,
+   "heightInCentimeters": 191,
+   "weightInKilograms": 87,
+   "birthDate": "1999-10-20",
+   "birthCity": {
+    "default": "Oakville"
+   },
+   "birthCountry": "CAN",
+   "birthStateProvince": {
+    "default": "ON"
+   }
+  }
+ ],
+ "goalies": [
+  {
+   "id": 8475883,
+   "headshot": "https://assets.nhle.com/mugs/nhl/20262027/EDM/8475883.png",
+   "firstName": {
+    "default": "Frederik"
+   },
+   "lastName": {
+    "default": "Andersen"
+   },
+   "sweaterNumber": 30,
+   "positionCode": "G",
+   "shootsCatches": "L",
+   "heightInInches": 76,
+   "weightInPounds": 229,
+   "heightInCentimeters": 193,
+   "weightInKilograms": 104,
+   "birthDate": "1989-10-02",
+   "birthCity": {
+    "default": "Herning"
+   },
+   "birthCountry": "DNK"
+  },
+  {
+   "id": 8484455,
+   "headshot": "https://assets.nhle.com/mugs/nhl/20262027/EDM/8484455.png",
+   "firstName": {
+    "default": "Nathaniel"
+   },
+   "lastName": {
+    "default": "Day"
+   },
+   "sweaterNumber": 40,
+   "positionCode": "G",
+   "shootsCatches": "L",
+   "heightInInches": 74,
+   "weightInPounds": 181,
+   "heightInCentimeters": 188,
+   "weightInKilograms": 82,
+   "birthDate": "2005-02-04",
+   "birthCity": {
+    "default": "Burlington"
+   },
+   "birthCountry": "CAN",
+   "birthStateProvince": {
+    "default": "ON"
+   }
+  }
+ ]
+}

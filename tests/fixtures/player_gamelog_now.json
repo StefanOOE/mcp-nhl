@@ -1,0 +1,161 @@
+{
+ "seasonId": 20252026,
+ "gameTypeId": 2,
+ "playerStatsSeasons": [
+  {
+   "season": 20252026,
+   "gameTypes": [
+    2
+   ]
+  },
+  {
+   "season": 20242025,
+   "gameTypes": [
+    2
+   ]
+  },
+  {
+   "season": 20222023,
+   "gameTypes": [
+    2
+   ]
+  }
+ ],
+ "gameLog": [
+  {
+   "gameId": 2025021303,
+   "teamAbbrev": "DET",
+   "homeRoadFlag": "R",
+   "gameDate": "2026-04-15",
+   "goals": 0,
+   "assists": 0,
+   "commonName": {
+    "default": "Red Wings"
+   },
+   "opponentCommonName": {
+    "default": "Panthers"
+   },
+   "points": 0,
+   "plusMinus": -2,
+   "powerPlayGoals": 0,
+   "powerPlayPoints": 0,
+   "gameWinningGoals": 0,
+   "otGoals": 0,
+   "shots": 2,
+   "shifts": 24,
+   "shorthandedGoals": 0,
+   "shorthandedPoints": 0,
+   "pim": 0,
+   "toi": "18:41",
+   "opponentAbbrev": "FLA"
+  },
+  {
+   "gameId": 2025021282,
+   "teamAbbrev": "DET",
+   "homeRoadFlag": "R",
+   "gameDate": "2026-04-13",
+   "goals": 1,
+   "assists": 0,
+   "commonName": {
+    "default": "Red Wings"
+   },
+   "opponentCommonName": {
+    "default": "Lightning"
+   },
+   "points": 1,
+   "plusMinus": 1,
+   "powerPlayGoals": 0,
+   "powerPlayPoints": 0,
+   "gameWinningGoals": 0,
+   "otGoals": 0,
+   "shots": 4,
+   "shifts": 18,
+   "shorthandedGoals": 0,
+   "shorthandedPoints": 0,
+   "pim": 0,
+   "toi": "13:32",
+   "opponentAbbrev": "TBL"
+  },
+  {
+   "gameId": 2025021265,
+   "teamAbbrev": "DET",
+   "homeRoadFlag": "H",
+   "gameDate": "2026-04-11",
+   "goals": 0,
+   "assists": 0,
+   "commonName": {
+    "default": "Red Wings"
+   },
+   "opponentCommonName": {
+    "default": "Devils"
+   },
+   "points": 0,
+   "plusMinus": 1,
+   "powerPlayGoals": 0,
+   "powerPlayPoints": 0,
+   "gameWinningGoals": 0,
+   "otGoals": 0,
+   "shots": 1,
+   "shifts": 13,
+   "shorthandedGoals": 0,
+   "shorthandedPoints": 0,
+   "pim": 0,
+   "toi": "9:14",
+   "opponentAbbrev": "NJD"
+  },
+  {
+   "gameId": 2025021250,
+   "teamAbbrev": "DET",
+   "homeRoadFlag": "H",
+   "gameDate": "2026-04-09",
+   "goals": 0,
+   "assists": 0,
+   "commonName": {
+    "default": "Red Wings"
+   },
+   "opponentCommonName": {
+    "default": "Flyers"
+   },
+   "points": 0,
+   "plusMinus": -1,
+   "powerPlayGoals": 0,
+   "powerPlayPoints": 0,
+   "gameWinningGoals": 0,
+   "otGoals": 0,
+   "shots": 0,
+   "shifts": 15,
+   "shorthandedGoals": 0,
+   "shorthandedPoints": 0,
+   "pim": 0,
+   "toi": "10:29",
+   "opponentAbbrev": "PHI"
+  },
+  {
+   "gameId": 2025021235,
+   "teamAbbrev": "DET",
+   "homeRoadFlag": "H",
+   "gameDate": "2026-04-07",
+   "goals": 0,
+   "assists": 0,
+   "commonName": {
+    "default": "Red Wings"
+   },
+   "opponentCommonName": {
+    "default": "Blue Jackets"
+   },
+   "points": 0,
+   "plusMinus": -2,
+   "powerPlayGoals": 0,
+   "powerPlayPoints": 0,
+   "gameWinningGoals": 0,
+   "otGoals": 0,
+   "shots": 1,
+   "shifts": 20,
+   "shorthandedGoals": 0,
+   "shorthandedPoints": 0,
+   "pim": 0,
+   "toi": "15:06",
+   "opponentAbbrev": "CBJ"
+  }
+ ]
+}

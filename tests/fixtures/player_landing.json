@@ -1,0 +1,287 @@
+{
+ "playerId": 8482079,
+ "isActive": true,
+ "currentTeamId": 23,
+ "currentTeamAbbrev": "VAN",
+ "fullTeamName": {
+  "default": "Vancouver Canucks",
+  "fr": "Canucks de Vancouver"
+ },
+ "teamCommonName": {
+  "default": "Canucks"
+ },
+ "teamPlaceNameWithPreposition": {
+  "default": "Vancouver",
+  "fr": "de Vancouver"
+ },
+ "firstName": {
+  "default": "Marco"
+ },
+ "lastName": {
+  "default": "Rossi"
+ },
+ "badges": [],
+ "teamLogo": "https://assets.nhle.com/logos/nhl/svg/VAN_light.svg",
+ "sweaterNumber": 23,
+ "position": "C",
+ "headshot": "https://assets.nhle.com/mugs/nhl/20262027/VAN/8482079.png",
+ "heroImage": "https://assets.nhle.com/mugs/actionshots/1296x729/8482079.jpg",
+ "heightInInches": 69,
+ "heightInCentimeters": 175,
+ "weightInPounds": 182,
+ "weightInKilograms": 83,
+ "birthDate": "2001-09-23",
+ "birthCity": {
+  "default": "Feldkirch"
+ },
+ "birthCountry": "AUT",
+ "shootsCatches": "L",
+ "draftDetails": {
+  "year": 2020,
+  "teamAbbrev": "MIN",
+  "round": 1,
+  "pickInRound": 9,
+  "overallPick": 9
+ },
+ "playerSlug": "marco-rossi-8482079",
+ "inTop100AllTime": 0,
+ "inHHOF": 0,
+ "featuredStats": {
+  "season": 20252026,
+  "regularSeason": {
+   "subSeason": {
+    "assists": 23,
+    "gameWinningGoals": 2,
+    "gamesPlayed": 50,
+    "goals": 12,
+    "otGoals": 1,
+    "pim": 10,
+    "plusMinus": -26,
+    "points": 35,
+    "powerPlayGoals": 3,
+    "powerPlayPoints": 14,
+    "shootingPctg": 0.181818,
+    "shorthandedGoals": 0,
+    "shorthandedPoints": 0,
+    "shots": 66
+   },
+   "career": {
+    "assists": 79,
+    "gameWinningGoals": 7,
+    "gamesPlayed": 235,
+    "goals": 57,
+    "otGoals": 4,
+    "pim": 95,
+    "plusMinus": -35,
+    "points": 136,
+    "powerPlayGoals": 12,
+    "powerPlayPoints": 36,
+    "shootingPctg": 0.1472,
+    "shorthandedGoals": 0,
+    "shorthandedPoints": 0,
+    "shots": 387
+   }
+  }
+ },
+ "careerTotals": {
+  "regularSeason": {
+   "assists": 79,
+   "avgToi": "17:04",
+   "faceoffWinningPctg": 0.4661,
+   "gameWinningGoals": 7,
+   "gamesPlayed": 235,
+   "goals": 57,
+   "otGoals": 4,
+   "pim": 95,
+   "plusMinus": -35,
+   "points": 136,
+   "powerPlayGoals": 12,
+   "powerPlayPoints": 36,
+   "shootingPctg": 0.1472,
+   "shorthandedGoals": 0,
+   "shorthandedPoints": 0,
+   "shots": 387
+  },
+  "playoffs": {
+   "assists": 1,
+   "avgToi": "11:08",
+   "faceoffWinningPctg": 0.4893,
+   "gameWinningGoals": 0,
+   "gamesPlayed": 6,
+   "goals": 2,
+   "otGoals": 0,
+   "pim": 6,
+   "plusMinus": 0,
+   "points": 3,
+   "powerPlayGoals": 0,
+   "powerPlayPoints": 1,
+   "shootingPctg": 0.22219999999999998,
+   "shorthandedGoals": 0,
+   "shorthandedPoints": 0,
+   "shots": 9
+  }
+ },
+ "shopLink": "#TODO",
+ "twitterLink": "#TODO",
+ "watchLink": "#TODO",
+ "last5Games": [
+  {
+   "assists": 0,
+   "gameDate": "2026-04-16",
+   "gameId": 2025021311,
+   "gameTypeId": 2,
+   "goals": 0,
+   "homeRoadFlag": "R",
+   "opponentAbbrev": "EDM",
+   "pim": 0,
+   "plusMinus": -2,
+   "points": 0,
+   "powerPlayGoals": 0,
+   "shifts": 16,
+   "shorthandedGoals": 0,
+   "shots": 1,
+   "teamAbbrev": "VAN",
+   "toi": "13:15"
+  },
+  {
+   "assists": 1,
+   "gameDate": "2026-04-14",
+   "gameId": 2025021300,
+   "gameTypeId": 2,
+   "goals": 0,
+   "homeRoadFlag": "H",
+   "opponentAbbrev": "LAK",
+   "pim": 0,
+   "plusMinus": 1,
+   "points": 1,
+   "powerPlayGoals": 0,
+   "shifts": 18,
+   "shorthandedGoals": 0,
+   "shots": 1,
+   "teamAbbrev": "VAN",
+   "toi": "16:08"
+  },
+  {
+   "assists": 1,
+   "gameDate": "2026-04-12",
+   "gameId": 2025021280,
+   "gameTypeId": 2,
+   "goals": 1,
+   "homeRoadFlag": "R",
+   "opponentAbbrev": "ANA",
+   "pim": 0,
+   "plusMinus": 0,
+   "points": 2,
+   "powerPlayGoals": 1,
+   "shifts": 21,
+   "shorthandedGoals": 0,
+   "shots": 2,
+   "teamAbbrev": "VAN",
+   "toi": "18:49"
+  },
+  {
+   "assists": 0,
+   "gameDate": "2026-04-11",
+   "gameId": 2025021275,
+   "gameTypeId": 2,
+   "goals": 1,
+   "homeRoadFlag": "R",
+   "opponentAbbrev": "SJS",
+   "pim": 0,
+   "plusMinus": 0,
+   "points": 1,
+   "powerPlayGoals": 0,
+   "shifts": 19,
+   "shorthandedGoals": 0,
+   "shots": 1,
+   "teamAbbrev": "VAN",
+   "toi": "18:52"
+  },
+  {
+   "assists": 0,
+   "gameDate": "2026-04-09",
+   "gameId": 2025021260,
+   "gameTypeId": 2,
+   "goals": 0,
+   "homeRoadFlag": "R",
+   "opponentAbbrev": "LAK",
+   "pim": 0,
+   "plusMinus": 1,
+   "points": 0,
+   "powerPlayGoals": 0,
+   "shifts": 21,
+   "shorthandedGoals": 0,
+   "shots": 0,
+   "teamAbbrev": "VAN",
+   "toi": "16:50"
+  }
+ ],
+ "seasonTotals": [
+  {
+   "assists": 9,
+   "avgToi": "18:06",
+   "faceoffWinningPctg": 0.486364,
+   "gameTypeId": 2,
+   "gameWinningGoals": 0,
+   "gamesPlayed": 17,
+   "goals": 4,
+   "leagueAbbrev": "NHL",
+   "otGoals": 0,
+   "pim": 2,
+   "plusMinus": -6,
+   "points": 13,
+   "powerPlayGoals": 0,
+   "powerPlayPoints": 5,
+   "season": 20252026,
+   "sequence": 1,
+   "shootingPctg": 0.148148,
+   "shorthandedGoals": 0,
+   "shorthandedPoints": 0,
+   "shots": 27,
+   "teamCommonName": {
+    "default": "Wild"
+   },
+   "teamName": {
+    "default": "Minnesota Wild",
+    "fr": "Wild du Minnesota"
+   },
+   "teamPlaceNameWithPreposition": {
+    "default": "Minnesota",
+    "fr": "du Minnesota"
+   }
+  },
+  {
+   "assists": 14,
+   "avgToi": "17:09",
+   "faceoffWinningPctg": 0.495775,
+   "gameTypeId": 2,
+   "gameWinningGoals": 2,
+   "gamesPlayed": 33,
+   "goals": 8,
+   "leagueAbbrev": "NHL",
+   "otGoals": 1,
+   "pim": 8,
+   "plusMinus": -20,
+   "points": 22,
+   "powerPlayGoals": 3,
+   "powerPlayPoints": 9,
+   "season": 20252026,
+   "sequence": 2,
+   "shootingPctg": 0.205128,
+   "shorthandedGoals": 0,
+   "shorthandedPoints": 0,
+   "shots": 39,
+   "teamCommonName": {
+    "default": "Canucks"
+   },
+   "teamName": {
+    "default": "Vancouver Canucks",
+    "fr": "Canucks de Vancouver"
+   },
+   "teamPlaceNameWithPreposition": {
+    "default": "Vancouver",
+    "fr": "de Vancouver"
+   }
+  }
+ ]
+}

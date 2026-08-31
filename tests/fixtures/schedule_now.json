@@ -1,0 +1,277 @@
+{
+ "nextStartDate": "2026-10-06",
+ "previousStartDate": "2026-09-22",
+ "gameWeek": [
+  {
+   "date": "2026-09-29",
+   "dayAbbrev": "TUE",
+   "numberOfGames": 5,
+   "datePromo": [],
+   "games": [
+    {
+     "id": 2026020001,
+     "season": 20262027,
+     "gameType": 2,
+     "venue": {
+      "default": "Lenovo Center"
+     },
+     "neutralSite": false,
+     "startTimeUTC": "2026-09-29T21:00:00Z",
+     "easternUTCOffset": "-04:00",
+     "venueUTCOffset": "-04:00",
+     "venueTimezone": "US/Eastern",
+     "gameState": "FUT",
+     "gameScheduleState": "OK",
+     "tvBroadcasts": [
+      {
+       "id": 309,
+       "market": "N",
+       "countryCode": "US",
+       "network": "ESPN",
+       "sequenceNumber": 10
+      }
+     ],
+     "awayTeam": {
+      "id": 13,
+      "commonName": {
+       "default": "Panthers"
+      },
+      "placeName": {
+       "default": "Florida",
+       "fr": "Floride"
+      },
+      "placeNameWithPreposition": {
+       "default": "Florida",
+       "fr": "de la Floride"
+      },
+      "abbrev": "FLA",
+      "logo": "https://assets.nhle.com/logos/nhl/svg/FLA_light.svg",
+      "darkLogo": "https://assets.nhle.com/logos/nhl/svg/FLA_dark.svg",
+      "awaySplitSquad": false,
+      "radioLink": "https://d2igy0yla8zi0u.cloudfront.net/FLA/20262027/FLA-radio.m3u8",
+      "odds": [
+       {
+        "providerId": 7,
+        "value": "+104"
+       },
+       {
+        "providerId": 6,
+        "value": "2.00"
+       },
+       {
+        "providerId": 9,
+        "value": "+110"
+       }
+      ]
+     },
+     "homeTeam": {
+      "id": 12,
+      "commonName": {
+       "default": "Hurricanes"
+      },
+      "placeName": {
+       "default": "Carolina",
+       "fr": "Caroline"
+      },
+      "placeNameWithPreposition": {
+       "default": "Carolina",
+       "fr": "de la Caroline"
+      },
+      "abbrev": "CAR",
+      "logo": "https://assets.nhle.com/logos/nhl/svg/CAR_light.svg",
+      "darkLogo": "https://assets.nhle.com/logos/nhl/svg/CAR_dark.svg",
+      "homeSplitSquad": false,
+      "radioLink": "https://d2igy0yla8zi0u.cloudfront.net/CAR/20262027/CAR-radio.m3u8",
+      "odds": [
+       {
+        "providerId": 7,
+        "value": "-125"
+       },
+       {
+        "providerId": 6,
+        "value": "1.80"
+       },
+       {
+        "providerId": 9,
+        "value": "-130"
+       }
+      ]
+     },
+     "periodDescriptor": {
+      "number": 1,
+      "periodType": "REG",
+      "maxRegulationPeriods": 3
+     },
+     "ticketsLink": "https://www.ticketmaster.com/event/2D0064F4BD48D131?brand=nhl&wt.mc_id=NHL_LEAGUE_CAR_SCHED_PG_GM1&utm_source=NHL.com&utm_medium=client&utm_campaign=NHL_LEAGUE_CAR&utm_content=SCHED_PG_GM1",
+     "ticketsLinkFr": "https://www.ticketmaster.com/event/2D0064F4BD48D131?brand=nhl&wt.mc_id=NHL_LEAGUE_CAR_SCHED_PG_GM1&utm_source=NHL.com&utm_medium=client&utm_campaign=NHL_LEAGUE_CAR&utm_content=SCHED_PG_GM1",
+     "gameCenterLink": "/gamecenter/fla-vs-car/2026/09/29/2026020001"
+    },
+    {
+     "id": 2026020002,
+     "season": 20262027,
+     "gameType": 2,
+     "venue": {
+      "default": "Scotiabank Arena"
+     },
+     "neutralSite": false,
+     "startTimeUTC": "2026-09-29T23:00:00Z",
+     "easternUTCOffset": "-04:00",
+     "venueUTCOffset": "-04:00",
+     "venueTimezone": "America/Toronto",
+     "gameState": "FUT",
+     "gameScheduleState": "OK",
+     "tvBroadcasts": [
+      {
+       "id": 282,
+       "market": "N",
+       "countryCode": "CA",
+       "network": "SN",
+       "sequenceNumber": 107
+      }
+     ],
+     "awayTeam": {
+      "id": 8,
+      "commonName": {
+       "default": "Canadiens"
+      },
+      "placeName": {
+       "default": "Montr\u00e9al"
+      },
+      "placeNameWithPreposition": {
+       "default": "Montr\u00e9al",
+       "fr": "de Montr\u00e9al"
+      },
+      "abbrev": "MTL",
+      "logo": "https://assets.nhle.com/logos/nhl/svg/MTL_light.svg",
+      "darkLogo": "https://assets.nhle.com/logos/nhl/svg/MTL_dark.svg",
+      "awaySplitSquad": false,
+      "radioLink": "https://d2igy0yla8zi0u.cloudfront.net/MTL/20262027/MTL-radio.m3u8",
+      "odds": [
+       {
+        "providerId": 7,
+        "value": "-105"
+       },
+       {
+        "providerId": 9,
+        "value": "-105"
+       }
+      ]
+     },
+     "homeTeam": {
+      "id": 10,
+      "commonName": {
+       "default": "Maple Leafs"
+      },
+      "placeName": {
+       "default": "Toronto"
+      },
+      "placeNameWithPreposition": {
+       "default": "Toronto",
+       "fr": "de Toronto"
+      },
+      "abbrev": "TOR",
+      "logo": "https://assets.nhle.com/logos/nhl/svg/TOR_light.svg",
+      "darkLogo": "https://assets.nhle.com/logos/nhl/svg/TOR_dark.svg",
+      "homeSplitSquad": false,
+      "radioLink": "https://d2igy0yla8zi0u.cloudfront.net/TOR/20262027/TOR-radio.m3u8",
+      "odds": [
+       {
+        "providerId": 7,
+        "value": "-114"
+       },
+       {
+        "providerId": 9,
+        "value": "-115"
+       }
+      ]
+     },
+     "periodDescriptor": {
+      "number": 1,
+      "periodType": "REG",
+      "maxRegulationPeriods": 3
+     },
+     "ticketsLink": "https://www.nhl.com/mapleleafs/tickets/",
+     "ticketsLinkFr": "https://www.nhl.com/mapleleafs/tickets/",
+     "gameCenterLink": "/gamecenter/mtl-vs-tor/2026/09/29/2026020002"
+    }
+   ]
+  }
+ ],
+ "oddsPartners": [
+  {
+   "partnerId": 2,
+   "country": "SE",
+   "name": "Unibet",
+   "imageUrl": "https://assets.nhle.com/betting_partner/unibet.svg",
+   "siteUrl": "https://www.unibet.se/betting/sports/filter/ice_hockey/nhl/all/matches",
+   "bgColor": "#14805E",
+   "textColor": "#FFFFFF",
+   "accentColor": "#3AAA35"
+  },
+  {
+   "partnerId": 3,
+   "country": "CZ",
+   "name": "Tipsport",
+   "imageUrl": "https://assets.nhle.com/betting_partner/tipsport.svg",
+   "siteUrl": "https://www.tipsport.cz/PartnerRedirectAction.do?pid=16961&sid=20360&bid=34954&tid=11268",
+   "bgColor": "#2497F2",
+   "textColor": "#FFFFFF",
+   "accentColor": "#FFFFFF"
+  },
+  {
+   "partnerId": 6,
+   "country": "FI",
+   "name": "Veikkaus",
+   "imageUrl": "https://assets.nhle.com/betting_partner/veikkaus.svg",
+   "siteUrl": "https://www.veikkaus.fi/fi/vedonlyonti/pitkaveto?t=3-2-1_NHL",
+   "bgColor": "#0025F5",
+   "textColor": "#FFFFFF",
+   "accentColor": "#FFFFFF"
+  },
+  {
+   "partnerId": 7,
+   "country": "CA",
+   "name": "FanDuel",
+   "imageUrl": "https://assets.nhle.com/betting_partner/fanduel.svg",
+   "siteUrl": "https://fanduel.com",
+   "bgColor": "#0078ff",
+   "textColor": "#FFFFFF",
+   "accentColor": "#FFFFFF"
+  },
+  {
+   "partnerId": 8,
+   "country": "DE",
+   "name": "Sportradar",
+   "imageUrl": "https://assets.nhle.com/betting_partner/sportsradar.svg",
+   "siteUrl": "https://sportradar.com",
+   "bgColor": "#000000",
+   "textColor": "#FFFFFF",
+   "accentColor": "#E6E6E6"
+  },
+  {
+   "partnerId": 9,
+   "country": "US",
+   "name": "DraftKings",
+   "imageUrl": "https://assets.nhle.com/betting_partner/draftkings.svg",
+   "siteUrl": "https://dksb.sng.link/As9kz/3i4d?_dl=https%3A%2F%2Fsportsbook.draftkings.com%2Fgateway%3Fs%3D333653091&pcid=427326&psn=1320&pcn=NHL&pscn=OddsWidget&pcrn=NoOffer&pscid=SP&wpcid=427326&wpsrc=1320&wpcn=NHL&wpscn=OddsWidget&wpcrn=NoOffer&wpscid=SP&_forward_params=1",
+   "bgColor": "#000000",
+   "textColor": "#FFFFFF",
+   "accentColor": "#FFFFFF"
+  },
+  {
+   "partnerId": 10,
+   "country": "SK",
+   "name": "Doxxbet",
+   "imageUrl": "https://assets.nhle.com/betting_partner/doxxbet.svg",
+   "siteUrl": "https://www.doxxbet.sk/sk/sportove-tipovanie-online/kurzy/ladovy-hokej/usa/nhl/?msID=21&mbID=27",
+   "bgColor": "#f30d31",
+   "textColor": "#202020",
+   "accentColor": "#ffffff"
+  }
+ ],
+ "preSeasonStartDate": "2026-09-19",
+ "regularSeasonStartDate": "2026-09-29",
+ "regularSeasonEndDate": "2027-04-10",
+ "playoffEndDate": "2027-06-10",
+ "numberOfGames": 43
+}
