@@ -1,0 +1,43 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "mcp-nhl"
+version = "0.1.0"
+description = "MCP server for the public NHL APIs (scores, stats, schedules, game logs)"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "StefanOOE" }]
+keywords = ["mcp", "model-context-protocol", "nhl", "hockey", "sports", "api"]
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Topic :: Games/Entertainment",
+]
+dependencies = ["mcp>=2.0"]
+
+[project.optional-dependencies]
+dev = ["pytest>=8", "pytest-cov>=5", "ruff>=0.6"]
+
+[project.scripts]
+mcp-nhl = "mcp_nhl.server:main"
+
+[project.urls]
+Homepage = "https://github.com/StefanOOE/mcp-nhl"
+Issues = "https://github.com/StefanOOE/mcp-nhl/issues"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/mcp_nhl"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B", "W"]
