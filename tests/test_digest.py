@@ -63,3 +63,22 @@ def test_digest_name_mismatch_correction(client, monkeypatch):
 def test_digest_clamps_games(client):
     out = format_players_digest([8482079], games=999, boxscore=False, client=client)
     assert "last 20 games" in out
+
+
+def test_digest_report_lines_since(client):
+    out = format_players_digest([8482079], games=3, boxscore=False, since="2000-01-01",
+                                client=client)
+    report = out.split("## REPORT LINES", 1)[1]
+    assert "* **Marco Rossi (" in report
+    assert "  * Season: " in report
+    assert " vs " in report and "+/- " in report
+
+
+def test_digest_report_lines_none_after_since(client):
+    out = format_players_digest([8482079], boxscore=False, since="2999-01-01", client=client)
+    assert "(no NHL games after this date)" in out
+
+
+def test_digest_without_since_has_no_report_section(client):
+    out = format_players_digest([8482079], boxscore=False, client=client)
+    assert "REPORT LINES" not in out

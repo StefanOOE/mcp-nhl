@@ -11,3 +11,5 @@ Initial release.
   plus `stats_report` for the stats REST report family and `nhl_api_get` as a
   generic passthrough.
 - `players_digest`: one-call, pre-formatted multi-player performance snapshot.
+  With `since` (YYYY-MM-DD) it adds ready-made report bullets for every game
+  after that date, so a model can copy them instead of retyping the numbers.

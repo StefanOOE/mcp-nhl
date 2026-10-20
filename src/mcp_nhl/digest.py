@@ -3,6 +3,9 @@
 This is the one call that a small model (or a cron job) can make to get a
 complete, pre-formatted snapshot of several players at once: current team,
 season totals, and the last N games with per-game detail.
+
+With ``since`` it also emits ready-made report bullets for the games after that
+date, so the numbers never have to be copied (and mixed up) by the model.
 """
 
 from __future__ import annotations
@@ -42,9 +45,36 @@ def _game_line(game: dict, box: dict | None, position: str) -> str:
             f"TOI {toi}{extra}")
 
 
+def _report_game(game: dict, box: dict | None, position: str) -> str:
+    home_away = "H" if game.get("homeRoadFlag") == "H" else "A"
+    parts = [f"{game.get('goals', 0)} G", f"{game.get('assists', 0)} A",
+             f"+/- {_fmt_plus_minus(game.get('plusMinus', 0))}"]
+    sog = (box or {}).get("sog")
+    if sog is None:
+        sog = game.get("shots")
+    if sog is not None:
+        parts.append(f"SOG {sog}")
+    faceoff = (box or {}).get("faceoffPct")
+    if faceoff is not None and position != "D":
+        parts.append(f"Faceoff {faceoff}%")
+    toi = (box or {}).get("toi") or game.get("toi")
+    if toi:
+        parts.append(f"TOI {toi}")
+    return (f"  * {game.get('gameDate', '?')} ({home_away} vs {game.get('opponentAbbrev', '?')}): "
+            + ", ".join(parts))
+
+
+def _report_block(name: str, team: str, sub: dict, games: list[str]) -> str:
+    season = (f"{sub.get('gamesPlayed', 0)} GP, {sub.get('goals', 0)} G, "
+              f"{sub.get('assists', 0)} A ({sub.get('points', 0)} Pts), "
+              f"+/- {_fmt_plus_minus(sub.get('plusMinus', 0))}") if sub else "no games yet"
+    return "\n".join([f"* **{name} ({team}):**", f"  * Season: {season}", *games])
+
+
 def player_block(client: NHLClient, player: str | int, games: int,
-                 boxscore: bool) -> str:
-    """One player's section of the digest."""
+                 boxscore: bool, since: str | None = None) -> tuple[str, str | None]:
+    """One player's section of the digest, plus the report bullets for his
+    games after ``since`` (None if there are none or ``since`` is not set)."""
     header_id = player if isinstance(player, int) or str(player).isdigit() else "?"
     lines = [f"### {player}  (id {header_id})"]
 
@@ -52,13 +82,13 @@ def player_block(client: NHLClient, player: str | int, games: int,
         pid = client.resolve_player(player)
     except NHLAPIError as exc:
         lines.append(f"  ERROR resolving player: {exc}")
-        return "\n".join(lines)
+        return "\n".join(lines), None
 
     try:
         landing = client.player_landing(pid)
     except NHLAPIError as exc:
         lines.append(f"  ERROR loading profile: {exc}")
-        return "\n".join(lines)
+        return "\n".join(lines), None
 
     # Name mismatch guard: if the id points at the wrong person, re-resolve
     # by name via search and note the correction.
@@ -104,13 +134,14 @@ def player_block(client: NHLClient, player: str | int, games: int,
         game_list = log.get("gameLog") or []
     except NHLAPIError as exc:
         lines.append(f"  ERROR loading game log: {exc}")
-        return "\n".join(lines)
+        return "\n".join(lines), None
 
     if not game_list:
         lines.append("  No NHL games this season (minors / loan / injury).")
-        return "\n".join(lines)
+        return "\n".join(lines), None
 
     lines.append(f"  Last {min(games, len(game_list))} games:")
+    report_games = []
     for game in game_list[:games]:
         box = None
         if boxscore and game.get("gameId"):
@@ -119,16 +150,30 @@ def player_block(client: NHLClient, player: str | int, games: int,
             except NHLAPIError:
                 box = None
         lines.append(_game_line(game, box, position))
-    return "\n".join(lines)
+        if since and str(game.get("gameDate", "")) > since:
+            report_games.append(_report_game(game, box, position))
+    report = _report_block(full_name, team, sub, report_games) if report_games else None
+    return "\n".join(lines), report
 
 
 def format_players_digest(players: list[str | int], games: int = 3,
-                          boxscore: bool = True, *,
+                          boxscore: bool = True, since: str | None = None, *,
                           client: NHLClient | None = None) -> str:
     """Formatted digest for several players. ``players`` items may be names
-    or numeric ids."""
+    or numeric ids. ``since`` (YYYY-MM-DD) adds a REPORT LINES section with
+    ready-made bullets for every game after that date."""
     client = client or NHLClient()
     games = max(1, min(int(games), 20))
-    blocks = [player_block(client, p, games, boxscore) for p in players]
-    return "# NHL player digest\n" + f"# {len(players)} players, last {games} games\n\n" + \
-        "\n\n".join(blocks)
+    results = [player_block(client, p, games, boxscore, since) for p in players]
+    out = "# NHL player digest\n" + f"# {len(players)} players, last {games} games\n\n" + \
+        "\n\n".join(text for text, _ in results)
+    if not since:
+        return out
+    reports = [report for _, report in results if report]
+    quiet = [text.splitlines()[1].split(" - ")[0].strip() if len(text.splitlines()) > 1
+             else text.splitlines()[0] for text, report in results if not report]
+    section = [f"\n\n## REPORT LINES (NHL games after {since}) - copy verbatim, do not change"]
+    section += reports or ["(no NHL games after this date)"]
+    if quiet and reports:
+        section.append(f"No NHL game after {since}: {', '.join(quiet)}")
+    return out + "\n\n".join(section)

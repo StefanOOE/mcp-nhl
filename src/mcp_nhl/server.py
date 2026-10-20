@@ -57,11 +57,15 @@ def player_spotlight() -> list[dict]:
 
 
 @mcp.tool()
-def players_digest(players: list[str | int], games: int = 3, boxscore: bool = True) -> str:
+def players_digest(players: list[str | int], games: int = 3, boxscore: bool = True,
+                   since: str | None = None) -> str:
     """Pre-formatted text digest for several players at once: current team,
     season totals and the last N games with goals/assists/+-/SOG/faceoff/TOI.
-    One call, ready to drop into a report. ``players`` items are names or ids."""
-    return format_players_digest(players, games=games, boxscore=boxscore, client=_client)
+    One call, ready to drop into a report. ``players`` items are names or ids.
+    ``since`` (YYYY-MM-DD, e.g. the date of the last report) adds ready-made
+    report bullets for every game after that date - copy them verbatim."""
+    return format_players_digest(players, games=games, boxscore=boxscore, since=since,
+                                 client=_client)
 
 
 # --- games -------------------------------------------------------------
