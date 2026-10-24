@@ -9,7 +9,7 @@ description = "MCP server for the public NHL APIs (scores, stats, schedules, gam
 readme = "README.md"
 requires-python = ">=3.10"
 license = { text = "MIT" }
-authors = [{ name = "StefanOOE" }]
+authors = [{ name = "StefanOOEOrg" }]
 keywords = ["mcp", "model-context-protocol", "nhl", "hockey", "sports", "api"]
 classifiers = [
     "License :: OSI Approved :: MIT License",
@@ -25,8 +25,8 @@ dev = ["pytest>=8", "pytest-cov>=5", "ruff>=0.6"]
 mcp-nhl = "mcp_nhl.server:main"
 
 [project.urls]
-Homepage = "https://github.com/StefanOOE/mcp-nhl"
-Issues = "https://github.com/StefanOOE/mcp-nhl/issues"
+Homepage = "https://github.com/StefanOOEOrg/mcp-nhl"
+Issues = "https://github.com/StefanOOEOrg/mcp-nhl/issues"
 
 [tool.hatch.build.targets.wheel]
 packages = ["src/mcp_nhl"]

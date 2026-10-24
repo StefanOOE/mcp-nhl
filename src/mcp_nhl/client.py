@@ -25,7 +25,7 @@ WEB_BASE = "https://api-web.nhle.com"
 STATS_BASE = "https://api.nhle.com/stats/rest"
 SEARCH_URL = "https://search.d3.nhle.com/api/v1/search/player"
 
-USER_AGENT = "mcp-nhl/0.1 (+https://github.com/StefanOOE/mcp-nhl)"
+USER_AGENT = "mcp-nhl/0.1 (+https://github.com/StefanOOEOrg/mcp-nhl)"
 DEFAULT_TIMEOUT = 15.0
 
 # Hosts the generic passthrough tool is allowed to reach.
