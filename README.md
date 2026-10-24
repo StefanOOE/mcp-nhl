@@ -1,5 +1,7 @@
 # mcp-nhl
 
+[![CI](https://github.com/StefanOOEOrg/mcp-nhl/actions/workflows/ci.yml/badge.svg)](https://github.com/StefanOOEOrg/mcp-nhl/actions/workflows/ci.yml)
+
 An [MCP](https://modelcontextprotocol.io) server for the **public NHL APIs** —
 scores, standings, schedules, rosters, player landing pages, game logs,
 boxscores, stat leaders, playoffs and the draft.
@@ -15,8 +17,10 @@ boxscores, stat leaders, playoffs and the draft.
 
 ## Install
 
+**Python 3.10 or newer** (the CI runs 3.10 and 3.14).
+
 ```bash
-pipx install git+https://github.com/StefanOOE/mcp-nhl
+pipx install git+https://github.com/StefanOOEOrg/mcp-nhl
 # or, from a clone:
 python -m venv .venv && .venv/bin/pip install -e .
 ```
@@ -88,6 +92,41 @@ pip install -e ".[dev]"
 pytest          # offline; uses recorded fixtures in tests/fixtures/
 ruff check src tests
 ```
+
+## Project structure
+
+```
+mcp-nhl/
+├── src/mcp_nhl/
+│   ├── __init__.py          # public exports (NHLClient, format_players_digest)
+│   ├── __main__.py          # python -m mcp_nhl
+│   ├── client.py            # dependency-free HTTP client for the two NHL hosts
+│   ├── digest.py            # pre-formatted multi-player report lines
+│   └── server.py            # the MCP tools (one function per endpoint group)
+├── tests/
+│   ├── conftest.py
+│   ├── fixtures/            # recorded API responses, so the suite runs offline
+│   ├── test_client.py
+│   └── ...                  # one test module per tool group
+├── docs/endpoints.md        # the endpoints behind the tools, plus the escape hatch
+├── .github/workflows/ci.yml # pytest + ruff on 3.10 and 3.14
+├── CHANGELOG.md
+├── LICENSE
+├── pyproject.toml
+└── README.md
+```
+
+## Scope / Limitations
+
+- A single-user tool, not a service: it runs locally over stdio — no network port, no
+  authentication, no multi-user support.
+- Read-only: the NHL endpoints are public read APIs; nothing can be written, and there is no
+  caching or polling — every call fetches fresh.
+- The NHL can change or retire its endpoints at any time (the `nhl_api_get` escape hatch exists for
+  endpoints that have no dedicated tool).
+- Rate limits are not documented: keep the call rate low, especially with `nhl_api_get`.
+- Only the two public hosts are reachable (`api-web.nhle.com`, `api.nhle.com/stats/rest`); the
+  client sends no credentials and no API key.
 
 ## Prior art
 
